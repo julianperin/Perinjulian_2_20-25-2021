@@ -1,4 +1,25 @@
-#conteneur
-{
-    image-resolution: 100px;
+h1{
+    color: #0065FC;
+}
+
+
+.gras{
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#hébergements{
+
+    border: 2px solid #f2f2f2;
+    background-color: #F2F2F2;
+    width: 45%;
+    display: flex;
+    align-content: flex-start;
+}
+
+article{
+    border: 2px solid black;
 }
