@@ -3,13 +3,22 @@
     margin: auto;
 }
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
 header{
     display: flex;
     justify-content: space-between;
 }
-
-h1{
+header h1{
     color: #0065FC;
+}
+
+@font-face {
+        font-family: 'raleway';
+        src: url('Raleway-VariableFont_wght.ttf');
 }
 
 
@@ -17,9 +26,24 @@ nav ul{
     list-style-type: none;
     display: flex;
 }
+nav li{
+    margin-right: 40px;
+}
+nav a{
+    font-size: 1em;
+    color: #0065FC;
+    text-decoration: none;
+}
+nav a:hover{
+    border-top: 2px solid #0065FC;
+    margin-top: auto;
+}
+
+
 .gras{
     font-weight: bold;
 }
+
 
 footer{
     background-color: #f2f2f2;
