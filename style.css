@@ -3,8 +3,9 @@
     margin: auto;
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
+@font-face {
+    font-family: 'raleway';
+    src: url('Raleway-VariableFont_wght.ttf');
 }
 
 
@@ -14,12 +15,10 @@ header{
 }
 header h1{
     color: #0065FC;
+    border: 0px;
+    margin: 10px;
 }
 
-@font-face {
-        font-family: 'raleway';
-        src: url('Raleway-VariableFont_wght.ttf');
-}
 
 
 nav ul{
