@@ -15,8 +15,6 @@ header{
 }
 header h1{
     color: #0065FC;
-    border: 0px;
-    margin: 10px;
 }
 
 
@@ -34,14 +32,43 @@ nav a{
     text-decoration: none;
 }
 nav a:hover{
-    border-top: 2px solid #0065FC;
+    border-top: 1px solid #0065FC;
     margin-top: auto;
 }
 
+section{
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+section .hebergement{
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    width: 500px;
+    height: 600px;
+
+}
+
+section .hebergement article{
+    border: 2px solid white;
+    width: 30%;
+    display: flex;
+}
+
+section .populaire{
+    border: #f2f2f2;
+    background-color: #f2f2f2;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
 
 .gras{
     font-weight: bold;
 }
+
 
 
 footer{
