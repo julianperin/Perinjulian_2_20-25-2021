@@ -1,79 +1,76 @@
-#bloc_page{
-    width: 1024px;
-    margin: auto;
-}
-
 @font-face {
     font-family: 'raleway';
     src: url('Raleway-VariableFont_wght.ttf');
 }
 
+body {
+    font-family: raleway;
+}
 
-header{
+#bloc_page{
+    width: 1024px;
+    margin: auto;
+}
+
+header {
     display: flex;
     justify-content: space-between;
 }
-header h1{
+header h1 {
     color: #0065FC;
 }
 
-
-
-nav ul{
+nav ul {
     list-style-type: none;
     display: flex;
 }
-nav li{
+nav li {
     margin-right: 40px;
 }
-nav a{
+nav a {
     font-size: 1em;
     color: #0065FC;
     text-decoration: none;
 }
-nav a:hover{
+nav a:hover {
     border-top: 1px solid #0065FC;
     margin-top: auto;
 }
 
-section{
-    width: 50%;
+section aside {
     display: flex;
-    flex-wrap: nowrap;
 }
 
-section .hebergement{
-    border: 1px solid #f2f2f2;
+section .hebergement {
     background-color: #f2f2f2;
-    width: 500px;
-    height: 600px;
-
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+section article {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+section article figure {
+    border-radius: 5px solid white;
+}
+section article figcaption {
+    font-size: 10px;
 }
 
-section .hebergement article{
-    border: 2px solid white;
+aside {
+    background-color: #f2f2f2;
+    border-radius: 10px;
     width: 30%;
-    display: flex;
-}
-
-section .populaire{
-    border: #f2f2f2;
-    background-color: #f2f2f2;
-    width: 500px;
-    height: 600px;
     display: flex;
     flex-direction: column;
 }
 
-.gras{
-    font-weight: bold;
-}
-
-
-
-footer{
+footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
-    
 }
