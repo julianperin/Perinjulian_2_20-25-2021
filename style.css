@@ -37,14 +37,41 @@ nav a:hover {
     margin-top: auto;
 }
 
-section aside {
+#filtres ul {
+    list-style-type: none;
+    width: 65%;
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+#filtres ul h2 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#filtres ul li {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#zone {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 section .hebergement {
     background-color: #f2f2f2;
     border-radius: 10px;
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -64,13 +91,25 @@ section article figcaption {
 aside {
     background-color: #f2f2f2;
     border-radius: 10px;
-    width: 30%;
     display: flex;
     flex-direction: column;
+}
+
+aside article figure {
+    display: flex;
 }
 
 footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
+}
+footer ul li {
+    font-size: 13.5px;
+    list-style-type: none;
+    text-decoration: none;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
 }
