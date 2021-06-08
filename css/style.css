@@ -42,10 +42,6 @@ nav a:hover {
     padding-top: 30px;
 }
 
-.recherche {
-
-}
-
 #filtres {
     display: flex;
     flex-direction: row;
@@ -121,7 +117,7 @@ nav a:hover {
     overflow: hidden;
 }
 .hebergement article figure {
-    border-radius: 5px solid white;
+    box-shadow: 6px 6px 0px #f2f2f2;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -153,6 +149,7 @@ nav a:hover {
     color: #0065FC;
 }
 
+
 .populaire {
     flex: 1;
     background-color: #f2f2f2;
@@ -166,6 +163,8 @@ nav a:hover {
     border-radius: 20px;
     overflow: hidden;
     margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .populaire article figure {
     display: flex;
@@ -194,33 +193,43 @@ nav a:hover {
 .populaire article .blanc {
     object-fit: cover;
 }
+.populaire article figure i {
+    color: #0065FC;
+}
 
+.activite {
+    border: 2px solid red;
+}
 .activite-grille {
     display: flex;
 }
-
-.activite article {
-    border-radius: 10px;
+.activite-grille .partie_1 {
     display: flex;
 }
-.activite article img {
-    border-radius: 5px solid white;
+.activite-grille article {
+    margin: 0px;
+}
+.activite article figure {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-    width: 100%;
-    margin: 0;
 }
-
-.activite article .port .calanque {
+.activite article {
+    border-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: blueviolet;
+}
+.activite article img {
     object-fit: cover;
     vertical-align: middle;
-    width: 50%;
-    height: 80%;
+    height: 200px;
+    width: 100%;
 }
-
 
 
 footer {
@@ -232,8 +241,19 @@ footer ul li {
     font-size: 13.5px;
     list-style-type: none;
     text-decoration: none;
+    padding-left: 0px;
 }
 footer ul li a {
     text-decoration: none;
     color: black;
+    margin-left: 0px;
+}
+footer .propos {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+#gris {
+    color: #f2f2f2;
 }
