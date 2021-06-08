@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: raleway;
+}
+
+#bloc_page{
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    color: #0065FC;
+}
+.logo-text {
+    visibility: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 30px;
+}
+nav li {
+    margin-right: 40px;
+}
+nav a {
+    font-size: 1em;
+    color: #0065FC;
+    text-decoration: none;
+}
+nav a:hover {
+    border-top: 1px solid #0065FC;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+#filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+#filtres ul {
+    list-style-type: none;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+#filtres ul h2 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#filtres ul li {
+    border: 3px solid #f2f2f2;
+    padding: 5px;
+    border-radius: 25px;
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#filtres ul li i {
+    color: #0065FC;
+    padding: 10px;
+    border: 1px solid #DEEBFF;
+    border-radius: 20px;
+    background-color: #DEEBFF;
+}
+
+#zone {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.hebergement {
+    flex: 2;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.hebergement-grille .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.hebergement-grille .row:not(:last-child) {
+    margin-bottom: 20px;
+}
+.hebergement-grille article {
+    flex: 1;
+    margin: 0 10px;
+}
+.hebergement article {
+    border: 5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hebergement article figure {
+    border-radius: 5px solid white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    background-color: red;
+    width: 100%;
+    margin: 0;
+}
+.hebergement article img {
+    object-fit: cover;
+    vertical-align: middle;
+    height: 200px;
+    width: 100%;
+}
+.hebergement article figcaption {
+    font-size: 10px;
+    background-color: white;
+    padding: 8px 20px;
+}
+.hebergement article figcaption h3 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+.hebergement article figcaption > div {
+    font-size: 16px;
+    margin: 0;
+}
+
+.populaire {
+    flex: 1;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+}
+.populaire article {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.populaire article figure {
+    border-radius: 5px solid white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    width: 50%;
+    background: red;
+    margin: 0;
+}
+
+.populaire article figcaption {
+
+}
+.populaire article img {
+    object-fit: cover;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+.activite article {
+    border-radius: 10px;
+    display: flex;
+}
+
+.activite article img {
+    object-fit: cover;
+    height: 200px;
+    width: 100px;
+}
+
+
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul li {
+    font-size: 13.5px;
+    list-style-type: none;
+    text-decoration: none;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
