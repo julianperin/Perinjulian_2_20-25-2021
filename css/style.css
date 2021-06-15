@@ -86,6 +86,19 @@ nav a:hover {
     background-color: #DEEBFF;
 }
 
+.info i {
+    color: #0065FC;
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+}
+
+.info {
+    margin: 20px;
+}
+
 #zone {
     display: flex;
     flex-wrap: nowrap;
@@ -96,6 +109,9 @@ nav a:hover {
     background-color: #f2f2f2;
     border-radius: 15px;
     margin-right: 50px;
+}
+h2 {
+    margin: 30px;
 }
 .hebergement-grille .row {
     display: flex;
@@ -109,21 +125,16 @@ nav a:hover {
 }
 .hebergement-grille article {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 30px 30px;
 }
 .hebergement article {
+    background-color: white;
     border: 5px solid white;
     border-radius: 20px;
     overflow: hidden;
+    max-height: 300px;
 }
 .hebergement article figure {
-    box-shadow: 6px 6px 0px #f2f2f2;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-    width: 100%;
     margin: 0;
 }
 .hebergement article img {
@@ -133,38 +144,41 @@ nav a:hover {
     width: 100%;
 }
 .hebergement article figcaption {
-    font-size: 10px;
-    background-color: white;
-    padding: 8px 20px;
+    font-size: 15px;
+    padding: 5px 2px;
 }
 .hebergement article figcaption h3 {
     font-size: 20px;
-    margin: 0 0 8px 0;
+    margin: 0;
 }
 .hebergement article figcaption > div {
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
 }
 .hebergement article figure i {
     color: #0065FC;
+    font-size: 10px;
+    margin-top: 0px;
+}
+.plus {
+    margin: 30px;
 }
 
 
 .populaire {
     flex: 1;
     background-color: #f2f2f2;
-    flex-direction: column;
     border: 2px solid #f2f2f2;
     border-radius: 15px;
+    padding: 15px;
 }
 .populaire article {
+    background-color: white;
     border-color: white;
     border: 5px solid white;
     border-radius: 20px;
     overflow: hidden;
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0 20px 20px;
 }
 .populaire article figure {
     display: flex;
@@ -175,11 +189,11 @@ nav a:hover {
 .populaire article figcaption h3 {
     display: flex;
     font-size: 20px;
-
 }
 .populaire article figcaption {
     font-size: 10px;
-    background-color: white;
+    margin: 15px;
+    width: 100%;
 }
 .populaire article figcaption > div {
     font-size: 16px;
@@ -189,6 +203,7 @@ nav a:hover {
     object-fit: cover;
     vertical-align: middle;
     width: 50%;
+    height: 200px;
 }
 .populaire article .blanc {
     object-fit: cover;
@@ -197,38 +212,46 @@ nav a:hover {
     color: #0065FC;
 }
 
-.activite {
-    border: 2px solid red;
+.element h3 {
+    margin: 10px;
 }
-.activite-grille {
+.grille {
     display: flex;
+    width: 100%;
+    padding: 10px 0;
+    height: 600px;
 }
-.activite-grille .partie_1 {
+article {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 10px;
 }
-.activite-grille article {
-    margin: 0px;
-}
-.activite article figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-}
-.activite article {
+.element {
+    background-color: white;
     border-color: white;
     border: 5px solid white;
     border-radius: 20px;
+    box-shadow: 0px 0px 6px #f2f2f2;
     overflow: hidden;
-    margin: 10px;
-    background-color: blueviolet;
+    margin: 0 20px 20px;
+    background: yellow;
+    flex: 2;
 }
-.activite article img {
+.activite article figure img {
     object-fit: cover;
-    vertical-align: middle;
-    height: 200px;
     width: 100%;
+}
+.element:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.element-1 img {
+    height: 85%;
+}
+.element-2 {
+    flex: 1;
 }
 
 
@@ -257,3 +280,4 @@ footer .propos {
 #gris {
     color: #f2f2f2;
 }
+
