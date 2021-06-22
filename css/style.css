@@ -1,14 +1,11 @@
 @font-face {
     font-family: 'raleway';
-    src: url('fonts/Raleway-light_wght.ttf');
+    src: url('css/fonts/Raleway-medium.ttf');
 }
 
 body {
     font-family: raleway;
-}
-
-#bloc_page{
-    width: 100%;
+    width: 1200px;
     margin: auto;
 }
 
@@ -37,13 +34,14 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    border-top: 1px solid #0065FC;
+    border-top: 2px solid #0065FC;
     margin-top: 50px;
     padding-top: 30px;
 }
 nav .black {
     color: black;
 }
+
 
 .intro p {
     margin: 10px 0;
@@ -56,30 +54,31 @@ nav .black {
     height: 40px;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     overflow: hidden;
     margin: 20px 0;
 }
 .searchfield span {
     background-color: #f2f2f2;
-    padding-left: 10px;
-    height: 100%;
-    flex: 1;
+    padding: 14px;
+    font-size: 11px;
 }
 #search {
     padding-left: 20px;
+    font-weight: bold;
 }
 input {
     border: none;
     font-size: 15px;
-    font-weight: bold;
-    width: 100%;
-    flex: 5;
 }
 .searchfield #recherche {
     background-color: #0065FC;
     color: white;
     height: 100%;
+    width: 100%;
+}
+.loupe {
+    visibility: hidden;
+    font-size: 0px;
 }
 
 #filtres {
@@ -91,24 +90,22 @@ input {
 }
 #filtres ul {
     list-style-type: none;
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
     padding: 0px;
+    font-size: 15px;
 }
 #filtres h2 {
     margin: 20px 30px 20px 0;
+    font-size: 15px;
 }
 #filtres ul li {
     text-decoration: none;
     color: black;
     font-weight: bold;
     border: 3px solid #f2f2f2;
-    padding: 10px px 10px 0;
     border-radius: 25px;
     border-left: none;
+    display: inline-block;
+    margin: 0 15px 0 0;
 }
 #filtres ul li i {
     color: #0065FC;
@@ -122,6 +119,9 @@ input {
     color: black;
     font-weight: bold;
     padding: 0 15px;
+}
+#filtres a:hover {
+    color: #0065FC;
 }
 
 
@@ -143,12 +143,13 @@ input {
 }
 #zone h2 {
     margin: 30px;
+    font-size: 20px;
 }
 .hebergement {
     width: 75%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 .hebergement-grille .row {
     display: flex;
@@ -156,24 +157,30 @@ input {
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    margin-bottom: 30px;
 }
-.hebergement-grille .row:not(:last-child) {
-    margin-bottom: 20px;
-}
+
 .hebergement-grille article {
     flex: 1;
-    margin: 0 30px 30px;
+    margin: 0 30px;
 }
 .hebergement article {
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
+    box-shadow: 10px 6px 6px #00000017;
     overflow: hidden;
-    height: 200px;
     padding: 0px;
+}
+.hebergement article:not(:last-child) {
+    margin-right: 0px;
 }
 .hebergement article figure {
     margin: 0;
+}
+.hebergement article figure a {
+    color: black;
+    text-decoration: none;
 }
 .hebergement article img {
     object-fit: cover;
@@ -186,12 +193,13 @@ input {
     padding: 5px 2px;
 }
 .hebergement article figcaption h3 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
 }
 .hebergement article figcaption > div {
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
+    padding-top: 5px;
 }
 .hebergement article figure i {
     color: #0065FC;
@@ -207,27 +215,32 @@ input {
 .populaire {
     background: #f2f2f2;
     border-radius: 30px;
-    padding: 0 30px 30px;
-    width: 30%;
+    width: 40%;
+}
+.populaire h2 i {
+    padding-left: 136px;
 }
 .populaire article {
     background: #fff;
     padding: 5px;
     border-radius: 20px;
+    box-shadow: 10px 6px 6px #00000017;
     overflow: hidden;
-}
-.populaire article:not(:last-child) {
-    margin-bottom: 40px;
+    margin: 30px;
 }
 .populaire article figure {
     display: flex;
     margin: 0;
     border-radius: 20px;
     overflow: hidden;
-    height: 140px;
+    height: 130px;
+}
+.populaire article a {
+    color: black;
+    text-decoration: none;
 }
 .populaire article img {
-    width: 30%;
+    width: 40%;
     object-fit: cover;
     height: 100%;
 }
@@ -235,10 +248,12 @@ input {
     flex: 1;
     position: relative;
     padding: 10px 0px 15px 20px;
+    font-size: 12px;
 }
 .populaire article h3 {
     margin: 0;
-    padding-bottom: 5px;
+    padding: 0 20px 10px 0;
+    font-size: 15px;
 }
 .populaire article .etoile {
     color: #0065FC;
@@ -248,9 +263,11 @@ input {
 
 section h2 {
     margin: 60px 0 0;
+    font-size: 20px;
 }
 .element h3 {
     margin: 10px;
+    font-size: 15px;
 }
 .grille {
     display: flex;
@@ -264,15 +281,16 @@ section h2 {
     display: flex;
     flex-direction: column;;
 }
+.grille article a {
+    color: black;
+    text-decoration: none;
+}
 .element {
     background-color: white;
     border-color: white;
-    border: 5px solid white;
     border-radius: 20px;
     box-shadow: 10px 6px 6px #f2f2f2;
     overflow: hidden;
-    margin: 0 0px 20px;
-    background: white;
 }
 .activite article figure img {
     object-fit: cover;
@@ -283,42 +301,42 @@ section h2 {
     margin: 0 10px 0px 0;
 }
 .element-1 img {
-    height: 390px;
+    height: 90%;
 }
 .element-2 {
     height: 60%;
-    margin: 0 25px 20px;
+    margin: 0 25px 35px;
 }
 .element-2 img {
-    height: 195px;
+    height: 82%;
 }
 .element-3 {
     height: 40%;
     margin: 0 25px;
 }
 .element-3 img {
-    height: 113px;
+    height: 73%;
 }
 .element-4 {
     height: 100%;
     margin: 0 20px;
 }
 .element-4 img {
-    height: 390px;
+    height: 90%;
 }
 .element-5{
     height: 50%;
-    margin: 0 0 20px 25px;
+    margin: 0 0 35px 25px;
 }
 .element-5 img {
-    height: 154px;
+    height: 79%;
 }
 .element-6 {
     height: 50%;
     margin: 0 0 0px 25px;
 }
 .element-6 img {
-    height: 154px;
+    height: 79%;
 }
 
 
@@ -326,12 +344,15 @@ footer {
     background-color: #f2f2f2;
     display: flex;
 }
+footer h4 {
+    margin-bottom: 10px;
+}
 footer ul {
     padding-left: 0;
     margin: 0;
 }
 footer ul li {
-    font-size: 13.5px;
+    font-size: 15px;
     list-style-type: none;
     text-decoration: none;
     padding-left: 0px;
@@ -346,32 +367,21 @@ footer .propos {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    margin: 20px 200px 20px 20px;
+    margin: 30px 80px 30px 40px;
 }
 footer .heberge {
     display: flex;
     flex-direction: column;
-    margin: 20px 100px 20px 150px;
+    margin: 30px 80px 30px 80px;
 }
 footer .assistance {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    margin: 20px 200px 20px 200px;
+    margin: 30px 150px 30px 150px;
 }
 
 
 #gris {
     color: #f2f2f2;
-}
-
-@media all and (max-widht: 768px) {
-    #bloc_page {
-        width: auto;
-        margin: auto;
-    }
-    .intro p {
-        color: red;
-        background-color: red;
-    }
 }

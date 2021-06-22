@@ -1,0 +1,300 @@
+@media screen and (max-width: 780px) {
+    @font-face {
+        font-family: 'raleway';
+        src: url('css/fonts/Raleway-medium.ttf');
+    }
+
+    body {
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    header {
+        display: block;
+        width: 90%;
+    }
+
+    h1 img {
+        width: 36%;
+    }
+    h1 {
+        margin: 20px 81px 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+    nav ul {
+        list-style-type: none;
+        margin-top: 0;
+        border-bottom: 2px solid #f2f2f2;
+        margin-right: -35px;
+        font-weight: bold;
+    }
+    nav li {
+        padding-bottom: 20px;
+    }
+    nav a:hover {
+        border-top: none;
+        border-color: #0065FC;
+    }
+    nav .inscrire {
+        position: absolute;
+        top: 35px;
+        right: 0px;
+        border: none;
+    }
+    nav .black {
+        color: black;
+    }
+
+    .intro {
+        margin: 20px 81px;
+    }
+    }
+    .intro p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .searchfield {
+        border: 2px solid #f2f2f2;
+        border-radius: 15px;
+        width: 67%;
+        height: 40px;
+        display: flex;
+        overflow: hidden;
+        margin: 30px 81px 20px;
+    }
+    .searchfield #recherche {
+        width: 0%;
+        padding: 0px;
+    }
+    #search {
+        padding-left: 20px;
+        font-weight: bold;
+        width: 900%;
+    }
+    input[type="text" i] {
+        padding: 0px;
+        border: none;
+        color: -internal-light-dark (white);
+    }
+    #recherche {
+        visibility: collapse;
+        font-size: 0px;
+    }
+    .loupe {
+        visibility: visible;
+        font-size: 20px;
+        background-color: #0065FC;
+        color: white;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #filtres {
+        margin: 0px 81px;
+    }
+    #filtres h2 {
+        margin: 20px 30px 0px 0;
+        font-size: 15px;
+    }
+    #filtres ul li {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border: 3px solid #f2f2f2;
+        border-radius: 25px;
+        border-left: none;
+        display: inline-block;
+        margin: 0 10px 15px 0;
+    }
+
+    .info {
+        padding: 0 20px 20px 0;
+        font-size: 15px;
+        margin: 0 81px;
+    }
+    .info i {
+        padding-right: 10px;
+    }
+    .info .note {
+        text-align: left;
+    }
+    
+
+    #zone {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #zone h2 {
+        margin: 30px 30px 15px;
+        font-size: 20px;
+    }
+
+    .populaire {
+        background: #f2f2f2;
+        width: 90%;
+        border-radius: 0px;
+        margin: 0 20px;
+    }
+    .populaire h2 i {
+        padding-left: 168px;
+    }
+    .populaire article {
+        background: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow: 10px 6px 6px #00000017;
+        overflow: hidden;
+        margin: 15px 30px 15px
+    }
+    .populaire article figcaption {
+        flex: 1;
+        position: relative;
+        padding: 10px 0px 15px 20px;
+        font-size: 14px;
+    }
+    .populaire article h3 {
+        margin: 0;
+        padding: 0 20px 10px 0;
+        font-size: 17px;
+    }
+    .populaire article .etoile {
+        color: #0065FC;
+        font-size: 10px;
+        padding-top: 31px;
+    }
+
+    .hebergement {
+        width: 90%;
+        margin: 0 20px;
+        background-color: white;
+    }
+    .hebergement-grille {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergement-grille .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .hebergement article {
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 20px;
+        box-shadow: 10px 6px 6px #00000017;
+        overflow: hidden;
+        margin: 10px 30px;
+    }
+    .hebergement article:not(:last-child) {
+        margin-right: 30px;
+    }
+    .hebergement article:last-child {
+        margin-bottom: 30px;
+    }
+    .hebergement article figcaption h3 {
+        font-size: 17px;
+        margin: 0;
+    }
+    .hebergement article figcaption > div {
+        font-size: 14px;
+        margin: 0;
+        padding-top: 5px;
+    }
+    
+    .activite {
+        width: 90%;
+        margin: 0 20px;
+    }
+    .grille {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+    }
+    .grille article {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+    }
+    .element-1 img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .element-1 {
+        height: 100%;
+        margin: 10px 30px;
+    }
+    .element-2 img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .element-2 {
+        height: 100%;
+        margin: 10px 30px;
+    }
+    .element-3 img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .element-3 {
+        height: 100%;
+        margin: 10px 30px;
+    }
+    .element-4 img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .element-4 {
+        height: 100%;
+        margin: 10px 30px;
+    }
+    .element-5 img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .element-5 {
+        height: 100%;
+        margin: 10px 30px;
+    }
+    .element-6 img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .element-6 {
+        height: 100%;
+        margin: 10px 30px;
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 20px;
+    }
+    footer .propos {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin: 30px 40px 0px;
+    }
+    footer .heberge {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin: 0px 40px;
+    }
+    footer .assistance {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin: 0px 40px 30px;
+    }
+}
