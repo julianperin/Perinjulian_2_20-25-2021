@@ -15,6 +15,10 @@ header {
 }
 header h1 {
     color: #0065FC;
+    font-size: 30px;
+}
+h1 img {
+    width: 30%;
 }
 .logo-text {
     visibility: hidden;
@@ -23,28 +27,33 @@ header h1 {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 nav li {
     margin-right: 40px;
-}
-nav a {
-    font-size: 1em;
-    color: #0065FC;
-    text-decoration: none;
-}
-nav a:hover {
-    border-top: 2px solid #0065FC;
-    margin-top: 50px;
     padding-top: 30px;
 }
-nav .black {
+nav ul li a {
     color: black;
+    text-decoration: none;
+    }
+nav li:hover {
+    border-top: 2px solid #0065FC;
 }
-
+nav li.active a,
+nav li:hover a {
+ color: #0065FC;
+}
+nav li.inscrire a,
+nav li:hover a {
+ color: #0065FC;
+}
 
 .intro p {
     margin: 10px 0;
+}
+.intro strong {
+    font-size: 19px;
 }
 
 .searchfield  {
@@ -70,6 +79,7 @@ input {
     border: none;
     font-size: 15px;
 }
+
 .searchfield #recherche {
     background-color: #0065FC;
     color: white;
@@ -129,11 +139,14 @@ input {
     padding: 0 20px 20px 0px;
     font-size: 15px;
 }
+.cercle { 
+    height: 100px; 
+    width: 100px; 
+    border: 5px solid rgba(0, 0, 0, 1);
+    border-radius: 50%;
+}
 .info i {
     color: #0065FC;
-    padding: 7px;
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
     font-size: 10px;
 }
 
@@ -168,7 +181,7 @@ input {
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
-    box-shadow: 10px 6px 6px #00000017;
+    box-shadow: 1px 1px 10px 0px #555;
     overflow: hidden;
     padding: 0px;
 }
@@ -190,7 +203,7 @@ input {
 }
 .hebergement article figcaption {
     font-size: 15px;
-    padding: 5px 2px;
+    padding: 5px 0px 5px 10px;
 }
 .hebergement article figcaption h3 {
     font-size: 15px;
@@ -218,13 +231,14 @@ input {
     width: 40%;
 }
 .populaire h2 i {
-    padding-left: 136px;
+    position: absolute;
+    right: 370px;
 }
 .populaire article {
     background: #fff;
     padding: 5px;
     border-radius: 20px;
-    box-shadow: 10px 6px 6px #00000017;
+    box-shadow: 1px 1px 10px 0px #555;
     overflow: hidden;
     margin: 30px;
 }
@@ -258,7 +272,8 @@ input {
 .populaire article .etoile {
     color: #0065FC;
     font-size: 10px;
-    padding-top: 40px;
+    position: absolute;
+    bottom: 0px;
 }
 
 section h2 {
@@ -266,14 +281,14 @@ section h2 {
     font-size: 20px;
 }
 .element h3 {
-    margin: 10px;
+    margin: 10px 15px 15px;
     font-size: 15px;
 }
 .grille {
     display: flex;
     width: 100%;
     height: 450px;
-    padding: 10px 0;
+    padding: 30px 0;
     margin-bottom: 50px;
 }
 .grille article {
@@ -289,7 +304,7 @@ section h2 {
     background-color: white;
     border-color: white;
     border-radius: 20px;
-    box-shadow: 10px 6px 6px #f2f2f2;
+    box-shadow: 1px 1px 10px 4px #55555561;
     overflow: hidden;
 }
 .activite article figure img {

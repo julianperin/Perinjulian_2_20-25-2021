@@ -1,0 +1,122 @@
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    @font-face {
+        font-family: 'raleway';
+        src: url('fonts/Raleway-medium.ttf');
+    }
+
+    body {
+        width: auto;
+        font-size: 20px;
+    }
+
+    header {
+        width: 100%;
+    }
+    header h1 {
+        margin-left: 40px;
+    }
+    h1 img {
+        width: 36%;
+    }
+
+    .intro {
+        margin: 0px 40px 30px;
+    }
+
+    .searchfield {
+        border: 2px solid #f2f2f2;
+        border-radius: 15px;
+        width: 45%;
+        height: 40px;
+        display: flex;
+        overflow: hidden;
+        margin-left: 40px;
+    }
+    .searchfield #recherche {
+        width: 0%;
+        padding: 0px;
+    }
+    #search {
+        padding-left: 20px;
+        font-weight: bold;
+        width: 900%;
+    }
+    input[type="text" i] {
+        padding: 0px;
+        border: none;
+        color: -internal-light-dark (white);
+    }
+    #recherche {
+        visibility: collapse;
+        font-size: 0px;
+    }
+    .loupe {
+        visibility: visible;
+        font-size: 20px;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #filtres {
+        margin-left: 40px;
+    }
+
+    .info {
+        margin-left: 40px;
+    }
+
+    #zone {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+    }
+    #zone h2 {
+        margin: 30px 30px 30px 40px;
+        font-size: 20px;
+    }
+
+    .hebergement {
+        width: 100%;
+        margin-right: 40px;
+    }
+    .hebergement-grille .row:last-child {
+        margin-bottom: 30px;
+    }
+    .plus {
+        margin: 40px;
+    }
+
+    .populaire {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .populaire h2 i {
+        position: absolute;
+        right: 20px;
+    }
+    .populaire-grille {
+        display: flex;
+    }
+    .populaire article {
+        margin-top: 0px;
+    }
+
+    section h2 {
+        margin-left: 40px;
+    }
+    .activite {
+        width: 100%;
+    }
+    .grille {
+        display: flex;
+        width: unset;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    .element h3 {
+        margin: 0px 15px 15px;
+        font-size: 13px;
+    }
+}

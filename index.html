@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" media="screen and (max-width: 780px)" href="css/petite_resolution.css" />
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/petite_resolution.css" />
+        <link rel="stylesheet" media="screen and (min-width: 769px) (max-width: 991px)" href="css/tablette.css" />
         <title>Réservia</title>
         <script src="https://kit.fontawesome.com/7dd4e1b8cb.js" crossorigin="anonymous"></script>
     </head>
@@ -21,8 +22,8 @@
                 <!--nav-->
                 <nav>
                     <ul>
-                        <li><a href="#hebergements">Hébergement</a></li>
-                        <li><a href="#activites">Activités</a></li>
+                        <li class="active"><a href="#hebergements">Hébergement</a></li>
+                        <li class="black"><a href="#activites">Activités</a></li>
                         <li class="inscrire"><a href="#">S'inscrire</a></li>  
                     </ul>
                 </nav>
@@ -38,7 +39,7 @@
                 <span><i class="fas fa-map-marker-alt fa-lg"></i></span>
                 <input type="text" name="search" id="search" value="Marseille, France">
                 <input id="recherche" type="submit" value="Rechercher">
-                <div class="loupe"><i class="fas fa-heart"></i></div>
+                <div class="loupe"><i class="fas fa-search"></i></div>
              </div>
 
             <div id="filtres">
@@ -51,10 +52,10 @@
                 </ul>
             </div>
 
-            <div class="info">  
+            <div class="info">
                 <p>
-                    <i class="fas fa-info"></i>
-                    Plus de 500 logement sont disponible dans cette ville
+                    <span class="cercle"><i class="fas fa-info"></i></span>
+                    Plus de 500 logements sont disponible dans cette ville
                 </p>
             </div>
 
@@ -181,13 +182,13 @@
 
                 <!--section 2-->
                 <aside class="populaire">
-                    <h2>Les plus populaires<i class="fas fa-heart"></i></h2>
+                    <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
                     <div class="populaire-grille">
                         <article>
                             <a href="#">
                                 <figure>
                                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="soleil">
-                                    <figcaption>
+                                    <figcaption class="soleil">
                                         <h3>Hôtel le soleil du matin</h3>
                                         <div>Nuit à partir de 128€</div>
                                         <div class="etoile">
@@ -205,7 +206,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg " alt="">
-                                    <figcaption>  
+                                    <figcaption class="eau">  
                                         <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                                         <div>Nuit à partir de 71€</div>
                                         <div class="etoile">
@@ -223,7 +224,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
-                                    <figcaption>
+                                    <figcaption class="blanc">
                                         <h3>Hôtel tout Bleu et Blanc</h3>
                                         <div>Nuit à partir de 68€</div>
                                         <div class="etoile">
@@ -246,47 +247,59 @@
                 <h2 id="activites">Activités à Marseille</h2>
                 <div class="grille">
                     <article>
-                        <figure class="element element-1">                           
-                            <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="vieuxport">
-                            <figcaption>
-                                <h3>Vieux Port</h3>
-                            </figcaption>                            
+                        <figure class="element element-1">
+                            <a href="#">                           
+                                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="vieuxport">
+                                <figcaption>
+                                    <h3>Vieux Port</h3>
+                                </figcaption>
+                            </a>                           
                         </figure>
                     </article>
                     <article>
                         <figure class="element element-2">
-                            <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h3>Fort de Pomègues</h3>
-                            </figcaption>
+                            <a href="#">
+                                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                <figcaption>
+                                    <h3>Fort de Pomègues</h3>
+                                </figcaption>
+                            </a>
                         </figure>
                         <figure class="element element-3">
-                            <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h3>Îles du Frioul</h3>
-                            </figcaption>
+                            <a href="#">
+                                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                                <figcaption>
+                                    <h3>Îles du Frioul</h3>
+                                </figcaption>
+                            </a>
                         </figure>
                     </article>
                     <article>
                         <figure class="element element-4">
-                            <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h3>Parc National des Calanques</h3>
-                            </figcaption>                           
+                            <a href="#">
+                                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                                <figcaption>
+                                    <h3>Parc National des Calanques</h3>
+                                </figcaption>
+                            </a>                           
                         </figure>
                     </article>
                     <article class="last">
                         <figure class="element element-5">
-                            <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h3>Notre-Dame-de-le-Garde</h3>
-                            </figcaption>
+                            <a href="#">
+                                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                                <figcaption>
+                                    <h3>Notre-Dame-de-le-Garde</h3>
+                                </figcaption>
+                            </a>
                         </figure>
                         <figure class="element element-6">
-                            <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h3>Parc Longchamp</h3>
-                            </figcaption>
+                            <a href="">
+                                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                                <figcaption>
+                                    <h3>Parc Longchamp</h3>
+                                </figcaption>
+                            </a>
                         </figure>
                     </article>
                 </div>
