@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
     @font-face {
         font-family: 'raleway';
         src: url('fonts/Raleway-medium.ttf');
@@ -17,6 +17,10 @@
     }
     h1 img {
         width: 36%;
+    }
+
+    nav ul {
+        font-size: 17px;
     }
 
     .intro {
