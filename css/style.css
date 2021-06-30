@@ -216,7 +216,7 @@ input {
 }
 .hebergement article figure i {
     color: #0065FC;
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 0px;
 }
 .plus {
@@ -272,7 +272,7 @@ input {
 }
 .populaire article .etoile {
     color: #0065FC;
-    font-size: 10px;
+    font-size: 11px;
     position: absolute;
     bottom: 0px;
 }
