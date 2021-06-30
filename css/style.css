@@ -140,14 +140,20 @@ input {
     font-size: 15px;
 }
 .cercle { 
-    height: 100px; 
-    width: 100px; 
-    border: 5px solid rgba(0, 0, 0, 1);
+    height: 17px;
+    width: 17px;
+    border: 1px solid #f2f2f2;
     border-radius: 50%;
+    display: inline-block;
+    position: relative;
 }
 .info i {
     color: #0065FC;
-    font-size: 10px;
+    font-size: 9px;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+}
 }
 
 #zone {
@@ -267,14 +273,14 @@ input {
 }
 .populaire article h3 {
     margin: 0;
-    padding: 0 20px 10px 0;
+    padding: 0 20px 8px 0;
     font-size: 15px;
 }
 .populaire article .etoile {
     color: #0065FC;
     font-size: 11px;
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
 }
 
 section h2 {

@@ -106,6 +106,9 @@
     .populaire article {
         margin-top: 0px;
     }
+    .populaire article .etoile {
+        bottom: 2px;
+    }
 
     section h2 {
         margin-left: 40px;
