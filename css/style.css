@@ -229,10 +229,11 @@ input {
     background: #f2f2f2;
     border-radius: 30px;
     width: 40%;
+    position: relative;
 }
 .populaire h2 i {
     position: absolute;
-    right: 370px;
+    right: 25px;
 }
 .populaire article {
     background: #fff;
