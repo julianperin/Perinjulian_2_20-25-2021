@@ -186,7 +186,7 @@ input {
 }
 .hebergement article {
     background-color: white;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 0px #aaa;
     overflow: hidden;
@@ -244,7 +244,7 @@ input {
 }
 .populaire article {
     background: #fff;
-    padding: 5px;
+    padding: 3px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 0px #aaa;
     overflow: hidden;
@@ -269,7 +269,7 @@ input {
 .populaire article figcaption {
     flex: 1;
     position: relative;
-    padding: 10px 0px 15px 20px;
+    padding: 10px 2px 15px 20px;
     font-size: 12px;
 }
 .populaire article h3 {

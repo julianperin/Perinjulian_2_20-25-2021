@@ -158,7 +158,7 @@
     }
     .populaire article {
         background: #fff;
-        padding: 5px;
+        padding: 3px;
         border-radius: 20px;
         overflow: hidden;
         margin: 25px 30px 15px
@@ -200,7 +200,7 @@
     }
     .hebergement article {
         background-color: white;
-        border: 5px solid white;
+        border: 3px solid white;
         border-radius: 20px;
         overflow: hidden;
         margin: 15px 30px;
