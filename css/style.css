@@ -146,6 +146,8 @@ input {
     border-radius: 50%;
     display: inline-block;
     position: relative;
+    vertical-align: bottom;
+    margin-right: 5px;
 }
 .info i {
     color: #0065FC;
@@ -153,7 +155,6 @@ input {
     position: absolute;
     top: 4px;
     right: 7px;
-}
 }
 
 #zone {
