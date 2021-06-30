@@ -188,7 +188,7 @@ input {
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 0px #555;
+    box-shadow: 1px 1px 10px 0px #aaa;
     overflow: hidden;
     padding: 0px;
 }
@@ -246,7 +246,7 @@ input {
     background: #fff;
     padding: 5px;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 0px #555;
+    box-shadow: 1px 1px 10px 0px #aaa;
     overflow: hidden;
     margin: 30px;
 }
@@ -312,7 +312,7 @@ section h2 {
     background-color: white;
     border-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 4px #55555561;
+    box-shadow: 1px 1px 10px 0px #aaa;
     overflow: hidden;
 }
 .activite article figure img {
